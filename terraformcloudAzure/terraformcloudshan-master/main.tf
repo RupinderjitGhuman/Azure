@@ -3,10 +3,10 @@ variable "name"{
   }
 resource "azurerm_resource_group" "test" {
   name     = "${var.name}"
-  location = "West US"
+  location = "Canada Central"
 
   tags = {
-    environment = "Production"
+    environment = "TerraformTesting"
   }
 }
 resource "azurerm_storage_account" "test" {
